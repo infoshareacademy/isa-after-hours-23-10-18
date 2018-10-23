@@ -1,8 +1,9 @@
 import React from 'react'
+import moment from 'moment'
 
-const Message = (props) => (
+const Message = ({ message: { author, text, timestamp } }) => (
   <div>
-    {props.author} | {props.text}
+    {moment(timestamp).format('DD-MM-YY HH:mm:ss')} | {author} | {text}
   </div>
 )
 

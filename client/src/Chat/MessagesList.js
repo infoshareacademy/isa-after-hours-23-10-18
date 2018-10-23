@@ -6,10 +6,10 @@ const MessagesList = (props) => (
   <div>
     {
       props.messages &&
-      props.messages.map(({ text, author }) => (
+      props.messages.map(message => (
         <Message
-          text={text}
-          author={author}
+          key={message.key}
+          message={message}
         />
       ))
     }
