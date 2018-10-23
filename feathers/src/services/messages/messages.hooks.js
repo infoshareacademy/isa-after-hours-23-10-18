@@ -1,9 +1,10 @@
 
+const { disablePagination } = require('feathers-hooks-common');
 
 module.exports = {
   before: {
     all: [],
-    find: [],
+    find: [disablePagination()],
     get: [],
     create: [],
     update: [],
