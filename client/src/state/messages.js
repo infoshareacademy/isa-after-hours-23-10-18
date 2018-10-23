@@ -3,4 +3,4 @@ export {
   initMessagesSyncAction,
   sendNewMessageAction,
   stopMessagesSyncAction
-} from './messages-firebase'
+} from './messages-feathers'
